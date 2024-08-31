@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/dashboard";
 import Transactions from "./pages/transactions";
 import All from "./pages/market";
-import Favorites from "./pages/market/favorites";
 import Profile from "./pages/profile";
 import Config from "./pages/config";
 import AllCoins from "./pages/market/all";

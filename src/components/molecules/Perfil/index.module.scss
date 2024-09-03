@@ -54,11 +54,14 @@
         font-size: 1.7rem;
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
     }
     .profileIcon {
       width: 4.5rem;
+    }
+    .dotsIcon {
+      width: 2.5rem;
     }
   }
   @media (max-width: 1920px) {
@@ -68,14 +71,14 @@
       flex-direction: column;
       gap: 0.4rem;
       h3 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
     .profileIcon {
-      width: 3.5rem;
+      width: 3rem;
     }
     .dotsIcon {
       width: 1.5rem;

@@ -47,7 +47,7 @@ const SideBar = () => {
               <img
                 src={DashBoardIcon}
                 alt="DashBoardIcon"
-                className={styles.logoImage}
+                className={styles.navImage}
               />
               Dashboard
             </Link>
@@ -57,7 +57,7 @@ const SideBar = () => {
               <img
                 src={MarketIcon}
                 alt="MarketIcon"
-                className={styles.logoImage}
+                className={styles.navImage}
               />
               Mercado
             </Link>
@@ -67,7 +67,7 @@ const SideBar = () => {
               <img
                 src={TransactionsIcon}
                 alt="TransactionsIcon"
-                className={styles.logoImage}
+                className={styles.navImage}
               />
               Transações
             </Link>
@@ -77,7 +77,7 @@ const SideBar = () => {
               <img
                 src={PerfilIcon}
                 alt="PerfilIcon"
-                className={styles.logoImage}
+                className={styles.navImage}
               />
               Perfil
             </Link>
@@ -87,7 +87,7 @@ const SideBar = () => {
               <img
                 src={ConfigIcon}
                 alt="ConfigIcon"
-                className={styles.logoImage}
+                className={styles.navImage}
               />
               Configurações
             </Link>
@@ -95,13 +95,13 @@ const SideBar = () => {
           <hr className={styles.separator} />
           <li>
             <a href="">
-              <img src={HelpIcon} alt="HelpIcon" className={styles.logoImage} />
+              <img src={HelpIcon} alt="HelpIcon" className={styles.navImage} />
               Ajuda
             </a>
           </li>
           <li>
             <a href="">
-              <img src={ExitIcon} alt="ExitIcon" className={styles.logoImage} />
+              <img src={ExitIcon} alt="ExitIcon" className={styles.navImage} />
               Sair
             </a>
           </li>

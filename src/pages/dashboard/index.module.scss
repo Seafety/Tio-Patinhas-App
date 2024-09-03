@@ -1,3 +1,7 @@
+.dashboard{
+    display: grid;
+    max-height: 100vh;
+}
 
 .container {
     display: flex;
@@ -7,3 +11,13 @@
     align-items: stretch;
   }
   
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 35px;
+  }
+  
+  .container2 > * {
+    flex: 1; /* Garante que todos os blocos ocupem a mesma largura */
+  }

@@ -219,7 +219,7 @@
     }
     .navList {
       width: 100%;
-      gap: 1rem;
+      gap: 0.7rem;
 
       li {
         width: 100%;
@@ -230,7 +230,7 @@
           width: 100%;
           padding: 0.7rem 1rem;
           .logoImage {
-            width: 13%;
+            width: 10%;
             height: auto;
           }
         }
@@ -249,10 +249,10 @@
     .subnav {
       margin: 0 0 2rem 0;
       width: 100%;
-      gap: 01rem;
+      gap: 0.5rem;
       li {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         a {
           gap: 0.8rem;
           width: 100%;

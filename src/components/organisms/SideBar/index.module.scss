@@ -6,7 +6,6 @@
   box-sizing: border-box;
   background-color: #fff;
   padding: 0 1rem;
-  // padding: 2rem 1rem 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -22,7 +21,6 @@
   .navList {
     list-style: none;
     width: 100%;
-    // flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -71,7 +69,6 @@
     margin: 0 0 2rem 0;
     list-style: none;
     width: 100%;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 01rem;
@@ -154,61 +151,74 @@
   }
 
   @media (max-width: 2560px) {
-    padding: 0 2rem;
-
-    .navList li a {
-      width: 85%;
-      padding: 1rem 1.2rem;
-      font-size: 1.3rem;
-    }
+    padding: 0 3rem;
 
     .logo {
-      margin: 3rem 0 0 0;
-    }
-  }
-
-  @media (max-width: 1920px) {
-    width: auto;
-    height: 100%;
-    box-sizing: border-box;
-    background-color: #fff;
-    padding: 0 1rem;
-    // padding: 2rem 1rem 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-    .logo {
-      margin: 2rem 0 0 0;
+      margin: 4rem 0 0 0;
       .logoImage {
-        width: auto;
-        height: auto;
+        width: 100%;
       }
     }
 
     .navList {
-      list-style: none;
-      width: 100%;
-      // flex-grow: 1;
-      display: flex;
-      flex-direction: column;
       gap: 1rem;
 
       li {
-        text-align: start;
+        width: 100%;
+        font-size: 2rem;
+        a {
+          gap: 1.2rem;
+          width: 100%;
+          padding: 1rem 2.5rem;
+          .logoImage {
+            width: 13%;
+            height: auto;
+          }
+        }
+      }
+
+      li a:hover {
+        color: $active_orange;
+      }
+
+      li.active a {
+        border-radius: 1.5rem;
+        background-color: $active_orange;
+        color: $white;
+        font-weight: 600;
+      }
+    }
+
+    .subnav {
+      gap: 1.5rem;
+      li {
+        width: 100%;
+        font-size: 1.4rem;
+        a {
+          gap: 0.8rem;
+          width: 100%;
+          padding: 0 1rem;
+          .logoImage {
+            width: 6%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1920px) {
+    height: 100%;
+    padding: 0 1rem;
+    .navList {
+      width: 100%;
+      gap: 1rem;
+
+      li {
         width: 100%;
         font-size: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         a {
-          display: flex;
-          align-items: center;
           gap: 0.8rem;
-          text-align: start;
-          font-family: $font-stack;
-          text-decoration: none;
-          color: $black;
           transition: all 0.4s ease;
           width: 100%;
           padding: 0.7rem 1rem;
@@ -225,42 +235,19 @@
 
       li.active a {
         border-radius: 1rem;
-        background-color: $active_orange;
-        color: $white;
         font-weight: 600;
-      }
-      .separator {
-        width: auto;
-        height: 2px;
-        background-color: #e0e0e0;
-        border: none;
-        margin: 0.5rem 2rem;
       }
     }
 
     .subnav {
       margin: 0 0 2rem 0;
-      list-style: none;
       width: 100%;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
       gap: 01rem;
       li {
-        text-align: start;
         width: 100%;
         font-size: 1.2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         a {
-          display: flex;
-          align-items: center;
           gap: 0.8rem;
-          text-align: start;
-          font-family: $font-stack;
-          text-decoration: none;
-          color: #828493;
           width: 100%;
           padding: 0 1rem;
         }
@@ -270,16 +257,56 @@
 
   /* Responsividade para telas HD */
   @media (max-width: 1280px) {
-    padding: 0 0.5rem;
+    height: 100%;
+    padding: 0 1rem;
+    .logo {
+      margin: 1rem 0 0 0;
+      .logoImage {
+        width: 100%;
+      }
+    }
+    .navList {
+      width: 100%;
+      gap: 0.5rem;
 
-    .navList li a {
-      width: 70%; /* Ajuste de largura dos links */
-      padding: 0.5rem 0.8rem; /* Ajuste de padding para links */
-      font-size: 1rem; /* Reduzir tamanho da fonte */
+      li {
+        width: 100%;
+        font-size: 0.8rem;
+        a {
+          gap: 0.8rem;
+          transition: all 0.4s ease;
+          width: 100%;
+          padding: 0.3rem 0.6rem;
+          .logoImage {
+            width: 11%;
+            height: auto;
+          }
+        }
+      }
+
+      li a:hover {
+        color: $active_orange;
+      }
+
+      li.active a {
+        border-radius: 0.6rem;
+        font-weight: 600;
+      }
     }
 
-    .logo {
-      margin: 1.5rem 0 0 0;
+    .subnav {
+      margin: 0 0 2rem 0;
+      width: 100%;
+      gap: 01rem;
+      li {
+        width: 100%;
+        font-size: 0.7rem;
+        a {
+          gap: 0.8rem;
+          width: 100%;
+          padding: 0 1rem;
+        }
+      }
     }
   }
 

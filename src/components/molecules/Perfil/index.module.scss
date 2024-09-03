@@ -1,0 +1,17 @@
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 1rem;
+  background: #f1f1f1;
+  gap: 1rem;
+  padding: 0.4rem 1.3rem;
+  h3 {
+    color: var(--Duck, #3853a4);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}

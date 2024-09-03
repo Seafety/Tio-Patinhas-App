@@ -1,0 +1,107 @@
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0.7rem;
+  background: #f1f1f1;
+  gap: 1rem;
+  padding: 0.4rem 1.3rem;
+  .profileInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    h3 {
+      color: var(--Duck, #3853a4);
+      font-family: Lato;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  .profileIcon {
+    width: auto;
+    height: auto;
+  }
+  @media (max-width: 3840px) {
+    gap: 3rem;
+    .profileInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      h3 {
+        font-size: 2.8rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+    .profileIcon {
+      width: 7rem;
+    }
+    .dotsIcon {
+      width: 4rem;
+    }
+  }
+  @media (max-width: 2560px) {
+    gap: 2rem;
+    .profileInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      h3 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    .profileIcon {
+      width: 4.5rem;
+    }
+    .dotsIcon {
+      width: 2.5rem;
+    }
+  }
+  @media (max-width: 1920px) {
+    gap: 1.5rem;
+    .profileInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      h3 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .profileIcon {
+      width: 3rem;
+    }
+    .dotsIcon {
+      width: 1.5rem;
+    }
+  }
+  @media (max-width: 1280px) {
+    gap: 1rem;
+    .profileInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      h3 {
+        font-size: 0.7rem;
+      }
+      p {
+        font-size: 0.7rem;
+      }
+    }
+    .profileIcon {
+      width: 1.6rem;
+    }
+    .dotsIcon {
+      width: 0.8rem;
+    }
+  }
+}

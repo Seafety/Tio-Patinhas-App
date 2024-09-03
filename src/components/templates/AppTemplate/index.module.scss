@@ -1,0 +1,33 @@
+.grid_container {
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.sidebar {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  grid-area: 1 / 1 / 7 / 2;
+}
+.header {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  grid-area: 1 / 2 / 2 / 7;
+}
+.content {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  grid-area: 2 / 2 / 7 / 7;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/dashboard";
 import Transactions from "./pages/transactions";
 import All from "./pages/market";
@@ -18,7 +18,7 @@ const AppRoutes = () => {
         <Route path="/market/all-coins" element={<AllCoins />} />
         <Route path="/market/favorites-coins" element={<FavoritesCoins />} />
       </Route>
-      <Route path="/transacoes" element={<Transactions />} />
+      <Route path="/transactions" element={<Transactions />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/config" element={<Config />} />
     </Routes>

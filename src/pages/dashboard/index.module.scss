@@ -1,0 +1,21 @@
+.dashboard{
+    display: grid;
+    max-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 20px; 
+    padding: 0rem 2rem;
+    align-items: flex-start; 
+    align-items: stretch;
+    max-height: 95%;
+  }
+  
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0rem 2rem;
+  }
+  

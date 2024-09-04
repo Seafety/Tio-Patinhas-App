@@ -1,0 +1,68 @@
+.wallet {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  font-family: 'Lato', sans-serif !important;
+  color: #333;
+  flex: 1;
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.walletList {
+  list-style: none;
+  padding: 0;
+}
+
+.walletItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  padding: 5px 0;
+}
+
+.walletItem:last-child {
+  border-bottom: none;
+}
+
+.coinInfo {
+  display: flex;
+  align-items: center;
+}
+
+.coinIcon {
+  img{
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    margin-right: 10px;
+  }
+}
+
+.coinName {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.coinBalance {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #888;
+}
+
+.coinValue {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}

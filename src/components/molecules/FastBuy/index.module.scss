@@ -1,25 +1,144 @@
 .compraRapida {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: 'Lato', sans-serif;
+  background: #f7f9fc;
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  max-width: 40% !important;
+  font-family: 'Lato', sans-serif !important;
+  max-height: fit-content;
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.cryptoOptions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cryptoSelected, .cryptoPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.cryptoSelected img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.addCrypto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px dashed #ff9900;
+  color: #ff9900;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cryptoList {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cryptoItem {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.cryptoItem img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.cryptoItem:hover {
+  background-color: #f1f1f1;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  label {
+    font-weight: 500;
+    color: #FF7D00;
+    margin-right: 8px;
+    span{
+      color: #3853A4;
+    }
   }
-  
-  .inputGroup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+}
+
+input {
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  width: 50%;
+  font-family: 'Lato', sans-serif !important;
+  color: black;
+}
+
+.buyButton {
+  background: linear-gradient(90deg, #FF7D00 0%, #FF9C3E 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif !important; 
+  font-size: 14px;
+  font-weight: 600;
+  &:hover {
+    background: linear-gradient(90deg, #FF9C3E 0%, #FF7D00 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
   }
-  
-  button {
-    background-color: #ff6600;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+}
+
+.successMessage{
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

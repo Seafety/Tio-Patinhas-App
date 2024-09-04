@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './index.module.scss';
 import CardDashboard from '../../molecules/CardDashboard';
-import ProfitLossCard from '../../molecules/ProfitLossCard'; // Importe o novo componente
+import ProfitLossCard from '../../molecules/ProfitLossCard';
 
-const FinancialDashboard = () => {
+const FinancialDashboard = ({ walletTotal }) => { 
   const financialData = [
     { currency: 'BRL ⮀ BTC', value: '361130.16', percentage: 6.2, graphData: [10, 20, 15, 30, 25], color: 'orange' },
     { currency: 'BRL ⮀ ETH', value: '19113.37', percentage: -3.8, graphData: [25, 30, 20, 15, 10], color: 'black' },
@@ -12,11 +12,11 @@ const FinancialDashboard = () => {
 
   return (
     <div className={style.dashboard}>
-        <ProfitLossCard 
-        currencySymbol="R$"
-        value="106.065,00"
-        profit="+ 7,89%"
-        loss="- 0,32%"
+      <ProfitLossCard 
+        currencySymbol="R$" 
+        value={`R$ ${walletTotal.toFixed(2)}`}
+        profit="+ 7,89%" 
+        loss="- 0,32%" 
         neutral="3,78%"
       />
       {financialData.map((data, index) => (

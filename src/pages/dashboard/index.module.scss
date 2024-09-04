@@ -9,15 +9,13 @@
     padding: 0rem 2rem;
     align-items: flex-start; 
     align-items: stretch;
+    max-height: 95%;
   }
   
   .container2 {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
   }
   
-  .container2 > * {
-    flex: 1; /* Garante que todos os blocos ocupem a mesma largura */
-  }

@@ -1,26 +1,56 @@
 .historicoDeAtividade {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Lato', sans-serif;
-  
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    
-    th, td {
-        text-align: left;
-        padding: 8px;
-        border-bottom: 1px solid #ddd;
-    }
-  .green {
-    color: green;
-  }
-  
-  .red {
-    color: red;
-  }
+  background: #f7f9fc;
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  font-family: 'Lato', sans-serif !important;
+  width: 50%;
+  overflow-y: scroll;
+  max-height: 227px;
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-  
+}
+
+.title{
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  font-weight: bold;
+  color: #666;
+}
+
+.transaction {
+  display: flex;
+  align-items: center;
+}
+
+.transaction img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.green {
+  color: #28a745;
+}
+
+.red {
+  color: #dc3545;
+}

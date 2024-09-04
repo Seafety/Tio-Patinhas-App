@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './index.module.scss';
 
-const ActivityHistory = () => {
+const ActivityHistory = ({ transactions }) => {
   return (
     <div className={styles.historicoDeAtividade}>
-      <h2>Histórico de Atividade</h2>
-      <table>
+      <h2 className={styles.title}>Histórico de Atividade</h2>
+      <table className={styles.table}>
         <thead>
           <tr>
             <th>Transações</th>
@@ -16,20 +16,20 @@ const ActivityHistory = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>ETH Ethereum</td>
-            <td>Venda</td>
-            <td className={styles.green}>+2.154,00</td>
-            <td>OK</td>
-            <td>21 jun, 2024</td>
-          </tr>
-          <tr>
-            <td>CAKE Pancake</td>
-            <td>Compra</td>
-            <td className={styles.red}>-1.567,00</td>
-            <td>Pendente</td>
-            <td>15 jun, 2024</td>
-          </tr>
+          {transactions.map((transaction) => (
+            <tr key={transaction.id}>
+              <td className={styles.transaction}>
+                <img src={transaction.crypto.img} alt={transaction.crypto.name} />
+                {transaction.crypto.symbol} {transaction.crypto.name}
+              </td>
+              <td>{transaction.action}</td>
+              <td className={transaction.action === 'Compra' ? styles.red : styles.green}>
+                {transaction.action === 'Compra' ? '-' : '+'}{transaction.amount.toFixed(2)}
+              </td>
+              <td>{transaction.status}</td>
+              <td style={{color:'gray'}}>{transaction.date}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

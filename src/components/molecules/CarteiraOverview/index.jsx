@@ -11,7 +11,7 @@ const CarteiraOverview = () => {
     datasets: [
       {
         label: 'Overview',
-        data: [3000, 4550, 6000, 4000, 7000, 9000, 7000, 5000, 4060, 5000, 8000, 10000],
+        data: [3000, 4550, 6000, 4000, 7000, 9000, 7000, 5000, 4060, 5000, 8000, 9000],
         fill: false,
         backgroundColor: '#fff',
         borderColor: '#fff',
@@ -41,7 +41,7 @@ const CarteiraOverview = () => {
   return (
     <div className={styles.carteiraOverview}>
       <h2>Carteira Overview</h2>
-      <Line data={data} options={options} />
+      <Line style={{maxHeight: '300px'}}data={data} options={options} />
       <div className={styles.stats}>
         <div className={styles.income}>
         <span className={styles.icon}><img src={arrowUp}></img></span>

@@ -14,7 +14,7 @@ const FinancialDashboard = ({ walletTotal }) => {
     <div className={style.dashboard}>
       <ProfitLossCard 
         currencySymbol="R$" 
-        value={`R$ ${walletTotal.toFixed(2)}`}
+        value={` ${walletTotal.toFixed(2)}`}
         profit="+ 7,89%" 
         loss="- 0,32%" 
         neutral="3,78%"

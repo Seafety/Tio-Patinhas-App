@@ -1,0 +1,97 @@
+.saldoTotal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 30%;
+
+    h2{
+        color: #878787;
+        font-size: 22px;
+        margin-bottom: 1.5rem;
+        font-weight: 300;
+    }
+    &:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .saldoInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .saldo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .contas {
+    color: grey;
+  }
+  
+  .cartao {
+    margin-top: 20px;
+    background-color: #FF9900;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+  }
+  
+  .cartaoHeader {
+    color: white;
+    h3{
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; 
+        text-transform: capitalize;
+        margin: 10px 0;
+    }
+  }
+
+  .cartaoInfo {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  
+  .limite {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 1rem;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .indicador {
+    font-size: 14px;
+    color: grey;
+  }
+  

@@ -1,0 +1,10 @@
+.transactions{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    padding: 2rem 2rem;
+    align-items: flex-start; 
+    align-items: stretch;
+    max-height: 100%;
+    font-family: 'Lato', sans-serif !important;
+}

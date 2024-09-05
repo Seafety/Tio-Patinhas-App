@@ -10,15 +10,9 @@ const Profile = () => {
       <div className={styles.container_left_up}>
         <PerfilData />
       </div>
-      <div className={styles.container_left_low}>
-        <PerfilData />
-      </div>
-      <div className={styles.container_right_up}>
-        <PerfilData />
-      </div>
-      <div className={styles.container_right_low}>
-        <PerfilData />
-      </div>
+      <div className={styles.container_left_low}>{/* <PerfilData /> */}</div>
+      <div className={styles.container_right_up}>{/* <PerfilData /> */}</div>
+      <div className={styles.container_right_low}>{/* <PerfilData /> */}</div>
     </div>
   );
 };

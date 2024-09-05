@@ -22,13 +22,17 @@
 }
 .container_left_up {
   grid-area: 2 / 1 / 6 / 2;
+  box-sizing: border-box;
 }
 .container_left_low {
   grid-area: 6 / 1 / 13 / 2;
+  box-sizing: border-box;
 }
 .container_right_up {
   grid-area: 2 / 2 / 6 / 3;
+  box-sizing: border-box;
 }
 .container_right_low {
   grid-area: 6 / 2 / 13 / 3;
+  box-sizing: border-box;
 }

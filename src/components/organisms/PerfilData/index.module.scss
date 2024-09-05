@@ -6,13 +6,15 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  height: auto;
+  height: 100%;
+  box-sizing: border-box;
   .container_info {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     align-items: flex-start;
+    box-sizing: border-box;
     .container_info_photo {
       position: relative;
       width: 100%;
@@ -45,6 +47,7 @@
     }
 
     .container_info_content {
+      box-sizing: border-box;
       width: 100%;
       height: 100%;
       display: flex;
@@ -76,20 +79,28 @@
           justify-content: space-between;
           width: 100%;
 
-          p:first-of-type {
+          .text_black {
             font-size: 1.1rem;
             font-weight: 500;
           }
-          p:last-of-type {
+          .text_orange {
             font-size: 1.1rem;
             font-weight: 600;
             color: $active_orange;
+          }
+          div {
+            display: flex;
+            button {
+              background: none;
+              border: none;
+            }
           }
         }
       }
     }
   }
   .container_edit {
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     align-items: center;

@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./index.module.scss";
 import ProfileIcon from "../../../asset/Profile.svg";
 import Pencil from "../../../asset/pencil.svg";
+import Eye from "../../../asset/Eye.svg";
+import EyeClosed from "../../../asset/Eye-crossed.svg";
 
 const PerfilData = () => {
+  const [viewMoney, setViewMoney] = useState(true);
+
+  const handleViewMoney = () => {
+    setViewMoney((current) => !current);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.container_info}>
@@ -25,12 +32,22 @@ const PerfilData = () => {
           <h2>Conta</h2>
           <div className={styles.container_info_text}>
             <div className={styles.container_info_text_div}>
-              <p>Juntou-se</p>
-              <p>21 Julho, 2024</p>
+              <p className={styles.text_black}>Juntou-se</p>
+              <p className={styles.text_orange}>21 Julho, 2024</p>
             </div>
             <div className={styles.container_info_text_div}>
-              <p>Saldo Total</p>
-              <p></p>
+              <p className={styles.text_black}>Saldo Total</p>
+              <div>
+                <button onClick={handleViewMoney}>
+                  <img
+                    src={viewMoney ? Eye : EyeClosed}
+                    alt="Open or Close eyes"
+                  />
+                </button>
+                <p className={styles.text_orange}>
+                  {viewMoney ? "R$431251232,32" : "R$**********"}
+                </p>
+              </div>
             </div>
           </div>
         </div>

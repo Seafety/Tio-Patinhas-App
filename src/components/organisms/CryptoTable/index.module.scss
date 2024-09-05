@@ -1,0 +1,165 @@
+.cryptoTableContainer {
+
+    .tabFilter {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+  
+      .tabOption {
+        margin: 0 20px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #666;
+        position: relative;
+        
+        &:hover {
+          color: #333;
+        }
+  
+        &.active {
+          color: #f9a825;
+        }
+  
+        &.active::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background-color: #f9a825;
+          border-radius: 2px;
+        }
+      }
+    }
+  
+    .categoryFilterContainer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 20px;
+  
+      .categoryFilter {
+        display: flex;
+        align-items: center;
+        gap: 3rem;  
+  
+        .categoryOption {
+          margin-right: 20px;
+          padding-bottom: 5px;
+          cursor: pointer;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #666;
+          position: relative;
+          
+  
+          &:hover {
+            color: #333;
+          }
+  
+          &.active {
+            color: #f9a825;
+          }
+  
+          &.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background-color: #f9a825;
+            border-radius: 2px;
+          }
+        }
+      }
+  
+      .searchInput {
+        padding: 8px 16px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        width: 20rem;
+        font-size: 14px;
+      }
+    }
+  
+    .cryptoTable {
+      width: 100%;
+      overflow-x: auto;
+  
+      table {
+        width: 100%;
+        border-collapse: collapse;
+  
+        th {
+          text-align: left;
+          padding: 15px;
+          background-color: #fafafa;
+          color: #666;
+          font-size: 14px;
+          font-weight: normal;
+          text-transform: uppercase;
+        }
+  
+        td {
+          padding: 15px;
+          border-bottom: 1px solid #eee;
+          font-size: 1rem;
+          font-weight: bold;
+          
+  
+          &:first-child {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+  
+          img.tableIcon {
+            width: 30px;
+            height: 30px;
+            background-color: #bbbbbb;
+            border-radius: 50%;
+          }
+  
+          .coinDetails {
+            display: flex;
+            flex-direction: column; /* Coloca o nome e o símbolo em uma coluna */
+          }
+  
+          .coinName {
+            font-weight: bold;
+            padding: 3px 0;
+          }
+  
+          .coinSymbol {
+            font-size: 12px;
+            color: #888;
+          }
+        }
+  
+        .tableRow {
+          &:hover {
+            background-color: #f6f6f6;
+          }
+  
+          &.favorite {
+            background-color: #fffbec;
+          }
+        }
+      }
+    }
+  
+    .positive {
+      color: #4caf50;
+      font-weight: bold;
+    }
+  
+    .negative {
+      color: #f44336;
+      font-weight: bold;
+    }
+  }
+  

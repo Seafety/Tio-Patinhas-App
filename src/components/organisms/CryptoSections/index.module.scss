@@ -1,0 +1,71 @@
+.cryptoSections {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .cryptoBoxContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cryptoBoxContent div{
+        flex: 1;
+        text-align: left;
+
+}
+    .coinItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    gap: 2rem;
+    height: 2rem;
+    
+   
+  }
+  .coinName,
+.coinSymbol,
+.coinPrice,
+.coinChange {
+  text-align: left; 
+}
+  .coinItem:last-child {
+    border-bottom: none;
+  }
+  .coinIcon {
+    width: 30px;
+    height: 30px;
+    
+  }
+  .coinName {
+    font-weight: bold;
+    width:  5rem;
+  }
+  
+  .coinSymbol {
+    color: #777;
+  }
+  
+  .coinPrice {
+    font-weight: bold;
+  }
+  
+  .coinChange {
+    font-size: 0.9em;
+  }
+  
+  .positive {
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  .negative {
+    color: #f44336;
+    font-weight: bold;
+
+  }
+  

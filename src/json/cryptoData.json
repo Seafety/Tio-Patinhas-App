@@ -1,0 +1,185 @@
+{
+    "popularCoins": [
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "price": "R$6.418,56",
+        "change": "-0.75%",
+        "icon": "bitcoin-icon"
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "price": "R$6.418,56",
+        "change": "+1.2%",
+        "icon": "ethereum-icon"
+      },
+      {
+        "name": "Pancake",
+        "symbol": "BTC",
+        "price": "R$6.418,56",
+        "change": "-15%",
+        "icon": "pancake-icon"
+      },
+      {
+        "name": "DogCoin",
+        "symbol": "BTC",
+        "price": "R$6.418,56",
+        "change": "+3%",
+        "icon": "dogcoin-icon"
+      }
+    ],
+    "highCoins": [
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "price": "R$6.418,56",
+        "change": "-0.75%",
+        "icon": "bitcoin-icon"
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "price": "R$6.418,56",
+        "change": "+1.2%",
+        "icon": "ethereum-icon"
+      },
+      {
+        "name": "Pancake",
+        "symbol": "BTC",
+        "price": "R$6.418,56",
+        "change": "-15%",
+        "icon": "pancake-icon"
+      },
+      {
+        "name": "DogCoin",
+        "symbol": "BTC",
+        "price": "R$6.418,56",
+        "change": "+3%",
+        "icon": "dogcoin-icon"
+      }
+    ],
+    "volumeCoins": [
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "price": "R$6.418,56",
+        "change": "-0.75%",
+        "icon": "bitcoin-icon"
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "price": "R$6.418,56",
+        "change": "+1.2%",
+        "icon": "ethereum-icon"
+      },
+      {
+        "name": "Pancake",
+        "symbol": "BTC",
+        "price": "R$6.418,56",
+        "change": "-15%",
+        "icon": "pancake-icon"
+      },
+      {
+        "name": "DogCoin",
+        "symbol": "BTC",
+        "price": "R$6.418,56",
+        "change": "+3%",
+        "icon": "dogcoin-icon"
+      }
+    ],
+    "cryptoTable": [
+        {
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "price": "R$19.232,31",
+            "change": "+2.97%",
+            "volume": "R$103.8B",
+            "marketCap": "R$2.35T",
+            "category": "Todos"
+          },
+          {
+            "name": "Chinu",
+            "symbol": "CHINU",
+            "price": "R$0,003916",
+            "change": "+3.10%",
+            "volume": "R$2.16M",
+            "marketCap": "R$3.92M",
+            "category": "Todos"
+          },
+          {
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "price": "R$3.218,56",
+            "change": "-10%",
+            "volume": "R$39,2B",
+            "marketCap": "R$1.285,21B",
+            "category": "Todos"
+          },
+          {
+            "name": "Varen",
+            "symbol": "VRN",
+            "price": "R$3.218,56",
+            "change": "-31%",
+            "volume": "R$39,2B",
+            "marketCap": "R$1.285,21B",
+            "category": "Todos"
+          },
+          {
+            "name": "PancakeSwap",
+            "symbol": "CAKE",
+            "price": "R$2,26",
+            "change": "+0.81%",
+            "volume": "R$2B",
+            "marketCap": "R$1.285,21B",
+            "category": "Todos"
+          },
+          {
+            "name": "Sutersu",
+            "symbol": "SUTER",
+            "price": "R$0,001616",
+            "change": "+3.10%",
+            "volume": "R$39,2B",
+            "marketCap": "R$3.92M",
+            "category": "Todos"
+          },
+          {
+            "name": "Stellar",
+            "symbol": "XLM",
+            "price": "R$0,5049",
+            "change": "+1.75%",
+            "volume": "R$526,34M",
+            "marketCap": "R$1.57B",
+            "category": "Todos"
+          },
+          {
+            "name": "Tether",
+            "symbol": "USDT",
+            "price": "R$5,44",
+            "change": "-0.02%",
+            "volume": "R$377,2B",
+            "marketCap": "R$62.55B",
+            "category": "Todos"
+          },
+          {
+            "name": "BNB",
+            "symbol": "BNB",
+            "price": "R$3.245,36",
+            "change": "+3.10%",
+            "volume": "R$11,08B",
+            "marketCap": "R$478,98B",
+            "category": "Todos"
+          },
+          {
+            "name": "Solana",
+            "symbol": "SOL",
+            "price": "R$756,67",
+            "change": "+0.38%",
+            "volume": "R$17,29B",
+            "marketCap": "R$51,49B",
+            "category": "Todos"
+          }
+    ]
+  }
+  

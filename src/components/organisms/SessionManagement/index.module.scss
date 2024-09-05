@@ -17,7 +17,10 @@
     border: 1px solid #ddd;
     border-radius: 4px;
   }
-  
+  .sessionItem div{
+    flex: 1;
+    text-align: left;
+  }
   .endButton {
     padding: 6px 12px;
     background-color: #ff4444;

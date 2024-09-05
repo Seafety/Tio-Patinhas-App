@@ -6,6 +6,7 @@ import TwoFactorAuth from "../../components/organisms/TwoFactorAuth";
 import SessionManagement from "../../components/organisms/SessionManagement";
 import PrivacySettings from "../../components/organisms/PrivacySettings";
 import HistoryAcess from "../../components/organisms/HistoryAcess";
+import ThemeSelection from "../../components/organisms/Theme";
 
 
 const Config = () => {
@@ -30,7 +31,11 @@ const Config = () => {
           </>
         );
       case 'theme':
-        return <div>Em desenvolvimento...</div>; 
+        return (
+          <>
+        <ThemeSelection/>
+        </>
+      );
       default:
         return null;
     }

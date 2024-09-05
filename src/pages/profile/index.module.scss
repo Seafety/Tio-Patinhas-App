@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.container {
+  display: grid;
+  padding: 2rem 2rem 0 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container_title {
+  grid-area: 1 / 1 / 2 / 3;
+  h1 {
+    font-family: $font-stack;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+}
+.container_left_up {
+  grid-area: 2 / 1 / 6 / 2;
+}
+.container_left_low {
+  grid-area: 6 / 1 / 13 / 2;
+}
+.container_right_up {
+  grid-area: 2 / 2 / 6 / 3;
+}
+.container_right_low {
+  grid-area: 6 / 2 / 13 / 3;
+}

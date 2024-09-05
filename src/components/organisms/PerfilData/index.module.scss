@@ -1,0 +1,125 @@
+@import "../../../styles/variables";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: auto;
+  .container_info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    .container_info_photo {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .container_info_photo_profile {
+        width: 14rem;
+        object-fit: cover;
+        border: 1px $active_orange solid;
+        border-radius: 100%;
+      }
+
+      .container_info_edit {
+        position: absolute;
+        bottom: 0.1rem;
+        right: 9rem;
+        background: $active_orange;
+        padding: 0.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        .container_info_photo_edit {
+          width: 1.5rem;
+        }
+      }
+    }
+
+    .container_info_content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      font-family: $font-stack;
+      h2 {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        align-self: start;
+        font-family: $font-stack;
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-bottom: 4rem;
+      }
+      .container_info_text {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+        .container_info_text_div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+
+          p:first-of-type {
+            font-size: 1.1rem;
+            font-weight: 500;
+          }
+          p:last-of-type {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: $active_orange;
+          }
+        }
+      }
+    }
+  }
+  .container_edit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: $font-stack;
+    p {
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 0.7rem 4rem;
+    }
+    button {
+      width: 100%;
+      border-style: none;
+      color: $active_orange;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.7rem 1rem;
+      border-radius: 0.6rem;
+      background: rgba(247, 144, 51, 0.15);
+      transition: all 0.3s ease;
+      &:hover {
+        background: $active_orange;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      &:active {
+        background: darken($active_orange, 15%);
+        color: #fff;
+      }
+    }
+  }
+}

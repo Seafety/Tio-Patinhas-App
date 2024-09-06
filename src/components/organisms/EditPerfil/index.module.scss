@@ -308,6 +308,14 @@
               font-size: 1.1rem;
               font-weight: 600;
             }
+            div {
+              gap: 1.5rem;
+              .moneyButton {
+                img {
+                  width: 150%;
+                }
+              }
+            }
           }
         }
       }
@@ -317,9 +325,10 @@
         width: 100%;
         font-size: 1.5rem;
         font-weight: 500;
-        padding: 0.7rem 4rem;
+        padding: 0.5rem 3rem;
       }
       .container_edit_button {
+        font-size: 1.3rem;
         font-weight: 500;
         padding: 0.7rem 1rem;
         border-radius: 0.6rem;
@@ -354,6 +363,15 @@
             }
             .text_orange {
               font-size: 0.8rem;
+            }
+            div {
+              gap: 1rem;
+              align-items: center;
+              .moneyButton {
+                img {
+                  width: 120%;
+                }
+              }
             }
           }
         }

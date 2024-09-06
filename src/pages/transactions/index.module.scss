@@ -1,0 +1,32 @@
+.transactionsPage{
+    overflow: scroll;
+    max-height: 91vh;
+}
+
+.transactions{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    padding: 2rem 2rem;
+    align-items: flex-start; 
+    align-items: stretch;
+    max-height: 100%;
+    font-family: 'Lato', sans-serif !important;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 2rem;
+    gap: 20px;
+    font-family: 'Lato', sans-serif !important;
+    align-items: stretch; 
+    max-width: 100%;
+      }
+      
+.actions > * {
+    flex: 1; /* Garante que os componentes ocupem o mesmo espaço */
+    width: 100%; /* Garante que os componentes ocupem toda a largura disponível */
+}
+
+ 

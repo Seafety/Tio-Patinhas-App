@@ -33,10 +33,10 @@ const MetodoPagamento = () => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(1); // O cartão no meio, ou o padrão inicial
+  const [currentIndex, setCurrentIndex] = useState(1);
 
   const handleCardClick = (index) => {
-    setCurrentIndex(index); // Define o índice do cartão clicado como o ativo
+    setCurrentIndex(index);
   };
 
   return (

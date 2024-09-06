@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./index.module.scss";
 import EditPerfil from "../../components/organisms/EditPerfil";
 import MetodoPagamento from "../../components/organisms/MetodoPagamento";
+import Metamask from "../../components/organisms/Matemask";
 const Profile = () => {
   return (
     <div className={styles.container}>
@@ -15,7 +16,9 @@ const Profile = () => {
       <div className={styles.container_right_up}>
         <MetodoPagamento />
       </div>
-      <div className={styles.container_right_low}>{/* <PerfilData /> */}</div>
+      <div className={styles.container_right_low}>
+        <Metamask />
+      </div>
     </div>
   );
 };

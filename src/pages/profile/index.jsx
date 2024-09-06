@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./index.module.scss";
-import PerfilData from "../../components/organisms/PerfilData";
+import EditPerfil from "../../components/organisms/EditPerfil";
+import MetodoPagamento from "../../components/organisms/MetodoPagamento";
 const Profile = () => {
   return (
     <div className={styles.container}>
@@ -8,10 +9,12 @@ const Profile = () => {
         <h1>Perfil de Investidor</h1>
       </div>
       <div className={styles.container_left_up}>
-        <PerfilData />
+        <EditPerfil />
       </div>
-      <div className={styles.container_left_low}>{/* <PerfilData /> */}</div>
-      <div className={styles.container_right_up}>{/* <PerfilData /> */}</div>
+      <div className={styles.container_left_low}>{/* <EditPerfil /> */}</div>
+      <div className={styles.container_right_up}>
+        <MetodoPagamento />
+      </div>
       <div className={styles.container_right_low}>{/* <PerfilData /> */}</div>
     </div>
   );

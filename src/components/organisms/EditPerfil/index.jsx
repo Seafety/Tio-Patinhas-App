@@ -5,7 +5,7 @@ import Pencil from "../../../asset/pencil.svg";
 import Eye from "../../../asset/Eye.svg";
 import EyeClosed from "../../../asset/Eye-crossed.svg";
 
-const PerfilData = () => {
+const EditPerfil = () => {
   const [viewMoney, setViewMoney] = useState(true);
 
   const handleViewMoney = () => {
@@ -29,7 +29,7 @@ const PerfilData = () => {
           </div>
         </div>
         <div className={styles.container_info_content}>
-          <h2>Conta</h2>
+          <h2>Tio Patinhas</h2>
           <div className={styles.container_info_text}>
             <div className={styles.container_info_text_div}>
               <p className={styles.text_black}>Juntou-se</p>
@@ -38,7 +38,10 @@ const PerfilData = () => {
             <div className={styles.container_info_text_div}>
               <p className={styles.text_black}>Saldo Total</p>
               <div>
-                <button onClick={handleViewMoney}>
+                <button
+                  className={styles.moneyButton}
+                  onClick={handleViewMoney}
+                >
                   <img
                     src={viewMoney ? Eye : EyeClosed}
                     alt="Open or Close eyes"
@@ -53,11 +56,11 @@ const PerfilData = () => {
         </div>
       </div>
       <div className={styles.container_edit}>
-        <p>Tio Patinhas</p>
-        <button>Editar Perfil</button>
+        <p></p>
+        <button className={styles.container_edit_button}>Editar Perfil</button>
       </div>
     </div>
   );
 };
 
-export default PerfilData;
+export default EditPerfil;

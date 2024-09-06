@@ -5,8 +5,8 @@
   padding: 2rem 2rem 0 2rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 1.5rem;
+  grid-column-gap: 4rem;
+  grid-row-gap: 2.5rem;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -21,18 +21,25 @@
   }
 }
 .container_left_up {
+  height: 100%;
+
   grid-area: 2 / 1 / 6 / 2;
   box-sizing: border-box;
 }
 .container_left_low {
+  height: 100%;
   grid-area: 6 / 1 / 13 / 2;
   box-sizing: border-box;
 }
 .container_right_up {
+  height: 100%;
+
   grid-area: 2 / 2 / 6 / 3;
   box-sizing: border-box;
 }
 .container_right_low {
+  height: 100%;
+
   grid-area: 6 / 2 / 13 / 3;
   box-sizing: border-box;
 }

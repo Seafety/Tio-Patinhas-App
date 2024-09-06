@@ -5,31 +5,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+
   height: 100%;
   box-sizing: border-box;
   .container_info {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     align-items: flex-start;
     box-sizing: border-box;
     .container_info_photo {
       position: relative;
-      width: 100%;
-      height: 100%;
+      width: 50%;
+      height: auto;
       .container_info_photo_profile {
-        width: 14rem;
+        width: 75%;
+        height: auto;
         object-fit: cover;
         border: 1px $active_orange solid;
         border-radius: 100%;
       }
-
       .container_info_edit {
         position: absolute;
         bottom: 0.1rem;
-        right: 9rem;
+        right: 2rem;
         background: $active_orange;
         padding: 0.5rem;
         border-radius: 50%;
@@ -56,14 +56,11 @@
       justify-content: space-between;
       font-family: $font-stack;
       h2 {
-        text-align: center;
         width: 100%;
-        height: 100%;
         align-self: start;
         font-family: $font-stack;
         font-size: 1.5rem;
         font-weight: 900;
-        margin-bottom: 4rem;
       }
       .container_info_text {
         height: 100%;
@@ -71,14 +68,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        gap: 3rem;
+        justify-content: center;
+        gap: 1rem;
         .container_info_text_div {
           display: flex;
           align-items: center;
           justify-content: space-between;
           width: 100%;
-
           .text_black {
             font-size: 1.1rem;
             font-weight: 500;
@@ -90,7 +86,7 @@
           }
           div {
             display: flex;
-            button {
+            .moneyButton {
               background: none;
               border: none;
             }
@@ -111,7 +107,7 @@
       font-weight: 500;
       padding: 0.7rem 4rem;
     }
-    button {
+    .container_edit_button {
       width: 100%;
       border-style: none;
       color: $active_orange;

@@ -77,14 +77,12 @@
         }
       }
   
-      .searchInput {
-        padding: 8px 16px;
-        border: 1px solid #ddd;
-        border-radius: 20px;
-        width: 20rem;
-        font-size: 14px;
-      }
+     
+    
+
+      
     }
+    
   
     .cryptoTable {
       width: 100%;
@@ -97,16 +95,16 @@
         th {
           text-align: left;
           padding: 15px;
-          background-color: #fafafa;
-          color: #666;
+          
+          color: #f9a825;
           font-size: 14px;
-          font-weight: normal;
+          font-weight: bold;
           text-transform: uppercase;
         }
   
         td {
           padding: 15px;
-          border-bottom: 1px solid #eee;
+          
           font-size: 1rem;
           font-weight: bold;
           

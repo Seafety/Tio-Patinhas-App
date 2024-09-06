@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import styles from './index.module.scss';
 import cryptoData from '../../../json/cryptoData.json'; 
 import FavoriteIcon from '../../atoms/FavoriteIcon';
+import SearchBar from '../../molecules/SearchBar';
 
 import ethereumIcon from '../../../asset/ethIcon.svg';
+import ethreumIcon from '../../../asset/etheIcon.svg';
 import chinuIcon from '../../../asset/chiIcon.svg';
 import varenIcon from '../../../asset/varIcon.svg';
 import pancakeIcon from '../../../asset/cakeIcon.svg';
@@ -13,12 +15,14 @@ import tetherIcon from '../../../asset/tetIcon.svg';
 import bnbIcon from '../../../asset/bnbIcon.svg';
 import solanaIcon from '../../../asset/solIcon.svg';
 
+
 const iconMap = {
   'eth-icon': ethereumIcon,
+  'ethe-icon': ethreumIcon,
   'chinu-icon': chinuIcon,
-  'varen-icon': varenIcon,
+  'vrn-icon': varenIcon,
   'cake-icon': pancakeIcon,
-  'sutersu-icon': sutersuIcon,
+  'suter-icon': sutersuIcon,
   'xlm-icon': stellarIcon,
   'usdt-icon': tetherIcon,
   'bnb-icon': bnbIcon,
@@ -84,13 +88,9 @@ const CryptoTable = () => {
             </span>
           ))}
         </div>
-        <input
-          className={styles.searchInput}
-          type="text"
-          placeholder="Buscar..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+        <div>
+        <SearchBar/>
+        </div>
       </div>
 
       {/* Tabela de Criptos */}

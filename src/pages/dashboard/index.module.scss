@@ -1,26 +1,126 @@
-.dashboard{
-    display: grid;
-    overflow: scroll;
-    max-height: 91.5vh;
-    .financialDashboard{
-      margin-top: 20px;
-    }
+.dashboard {
+  display: grid;
+  overflow: scroll;
+  max-height: 91.5vh;
+
+  .financialDashboard {
+    margin-top: 20px;
+  }
 }
 
 .container {
-    display: flex;
-    gap: 20px; 
-    padding: 0rem 2rem;
-    align-items: flex-start; 
-    align-items: stretch;
-    max-height: 95%;
+  display: flex;
+  gap: 20px;
+  padding: 0rem 2rem;
+  align-items: flex-start;
+  align-items: stretch;
+  max-height: 95%;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0rem 2rem;
+  margin-bottom: 20px;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 0rem 1rem;
+    gap: 15px;
   }
-  
+
   .container2 {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 0rem 2rem;
-    margin-bottom: 20px;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    gap: 15px;
   }
-  
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 0rem 0.5rem;
+    gap: 10px;
+  }
+
+  .container2 {
+    flex-direction: column;
+    padding: 0rem 0.5rem;
+    gap: 10px;
+  }
+
+  .financialDashboard {
+    margin-top: 10px;
+  }
+
+  /* Ajustes específicos para elementos do Dashboard */
+  .wallet, .marketStats, .carteiraOverview {
+    width: 100%;
+  }
+}
+
+/* Responsividade para telas pequenas (smartphones pequenos) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0rem;
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  .container2 {
+    padding: 0rem;
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  .financialDashboard {
+    margin-top: 5px;
+  }
+
+  /* Ajuste de tamanho de texto e botões para mobile */
+  .wallet, .marketStats, .carteiraOverview {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button, input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* Redução de imagens e ícones para dispositivos móveis */
+  img {
+    max-width: 50px;
+    height: auto;
+  }
+}
+
+/* Estilos para dispositivos muito pequenos (telas menores que 360px) */
+@media (max-width: 360px) {
+  .container, .container2 {
+    padding: 0rem;
+    gap: 5px;
+  }
+
+  .financialDashboard {
+    margin-top: 3px;
+  }
+
+  .wallet, .marketStats, .carteiraOverview {
+    font-size: 12px;
+  }
+
+  button, input {
+    font-size: 12px;
+  }
+
+  img {
+    max-width: 40px;
+    height: auto;
+  }
+}

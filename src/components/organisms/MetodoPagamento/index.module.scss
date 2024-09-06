@@ -7,6 +7,7 @@
   height: 100%;
   width: 100%;
   align-items: center;
+
   .Titles {
     width: 80%;
     display: flex;
@@ -19,62 +20,77 @@
       font-weight: 900;
     }
   }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+  }
+
   .Card {
-    height: 100%;
-    width: 50%;
+    flex: 0 0 20%;
     border-radius: 10px;
-    background: linear-gradient(
-          to bottom right,
-          #ef4524 0%,
-          #ff4419 22%,
-          #ff7d00 50%
-        )
-        bottom right / 50% 50% no-repeat,
-      linear-gradient(to bottom left, #ef4524 0%, #ff4419 22%, #ff7d00 50%)
-        bottom left / 50% 50% no-repeat,
-      linear-gradient(to top left, #ef4524 0%, #ff4419 22%, #ff7d00 50%) top
-        left / 50% 50% no-repeat,
-      linear-gradient(to top right, #ef4524 0%, #ff4419 22%, #ff7d00 50%) top
-        right / 50% 50% no-repeat;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;
     padding: 1rem;
     justify-content: space-between;
+    box-sizing: border-box;
+    transition: transform 0.5s ease, z-index 0.5s ease, opacity 0.5s ease;
+    opacity: 0.5;
+    z-index: 1;
+    transform: scale(0.8) translateX(-20px);
+
+    &:hover {
+      transform: scale(1);
+    }
+
+    &.active {
+      flex: 0 0 40%;
+      transform: scale(1) translateX(0);
+      opacity: 1;
+      z-index: 10;
+    }
+
     div {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       .Data {
         display: flex;
         flex-direction: column;
         gap: 0.6rem;
+
         p {
-          color: var(--Branco, #fff);
+          color: #fff;
           font-family: Lato;
           font-size: 15px;
           font-style: normal;
           font-weight: 600;
-          line-height: normal;
         }
+
         h4 {
-          color: var(--Branco, #fff);
+          color: #fff;
           font-family: Lato;
           font-size: 24px;
           font-style: normal;
           font-weight: 700;
-          line-height: normal;
         }
       }
 
       .Logo {
         width: 30%;
       }
+
       .Aproximacao {
         width: 60%;
         align-self: flex-end;
       }
+
       .Ship {
         align-self: flex-end;
         width: 60%;

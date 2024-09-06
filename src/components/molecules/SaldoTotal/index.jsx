@@ -6,9 +6,9 @@ import visa from '../../../asset/visa.svg';
 const SaldoTotal = () => {
   // Estado contendo os cartões com cores diferentes
   const [cartoes, setCartoes] = useState([
-    { tipo: 'Crédito', numero: '**** **** **** 2598', limite: 25000, icone: mastercard, cor: 'black' },
+    { tipo: 'Crédito', numero: '**** **** **** 2598', limite: 55000, icone: mastercard, cor: 'black' },
     { tipo: 'Débito', numero: '**** **** **** 1234', limite: 12000, icone: visa, cor: '#1E90FF' },
-    { tipo: 'Cartão de Recompensa', numero: '**** **** **** 5678', limite: 50000, icone: mastercard, cor: '#F79033' },
+    { tipo: 'Cartão de Recompensa', numero: '**** **** **** 5678', limite: 5000, icone: mastercard, cor: '#F79033' },
   ]);
 
   const [cartaoAtual, setCartaoAtual] = useState(0); 

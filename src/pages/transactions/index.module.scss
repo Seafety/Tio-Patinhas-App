@@ -1,32 +1,87 @@
-.transactionsPage{
+.transactionsPage {
     overflow: scroll;
     max-height: 91vh;
-}
-
-.transactions{
+    padding: 1rem;
+  }
+  
+  .transactions {
     display: flex;
     flex-direction: row;
-    gap: 20px; 
-    padding: 2rem 2rem;
-    align-items: flex-start; 
+    gap: 20px;
+    padding: 2rem;
     align-items: stretch;
     max-height: 100%;
     font-family: 'Lato', sans-serif !important;
-}
-
-.actions {
+  }
+  
+  .actions {
     display: flex;
     flex-direction: row;
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
     gap: 20px;
     font-family: 'Lato', sans-serif !important;
-    align-items: stretch; 
     max-width: 100%;
-      }
-      
-.actions > * {
-    flex: 1; /* Garante que os componentes ocupem o mesmo espaço */
-    width: 100%; /* Garante que os componentes ocupem toda a largura disponível */
-}
-
- 
+    flex-wrap: wrap; 
+  }
+  
+  .actions > * {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .historico {
+    padding: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .transactions {
+      flex-direction: column;
+    }
+  
+    .actions {
+      flex-direction: column;
+    }
+  
+    .historico {
+      width: 100%;
+    }
+  
+    .grafico {
+      width: 100% !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .transactionsPage {
+      padding: 0.5rem;
+    }
+  
+    .transactions, .actions {
+      padding: 1rem;
+    }
+  
+    .actions > * {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .grafico {
+      width: 100% !important;
+      margin-bottom: 20px; /* Espaçamento entre os gráficos */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grafico {
+      max-width: 100% !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grafico {
+      max-width: 100% !important;
+      margin-bottom: 10px; /* Espaçamento menor para telas pequenas */
+    }
+  }
+  

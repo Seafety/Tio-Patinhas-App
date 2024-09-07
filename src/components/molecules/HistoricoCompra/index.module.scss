@@ -7,10 +7,12 @@
   transition: box-shadow 0.3s ease;
   max-width: 100%;
   font-family: 'Lato', sans-serif !important;
+
   &:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
-  h2{
+
+  h2 {
     color: #878787;
     font-size: 22px;
     margin-bottom: 1.5rem;
@@ -24,7 +26,8 @@
   margin-top: 20px;
 }
 
-.historicoTable th, .historicoTable td {
+.historicoTable th, 
+.historicoTable td {
   padding: 12px;
   text-align: left;
 }
@@ -38,6 +41,7 @@
   border-bottom: 1px solid #eaeaea;
 }
 
+/* Ações de compra e venda */
 .acaoCompra {
   display: inline-block;
   padding: 6px 12px;
@@ -60,6 +64,7 @@
   width: 79px;
 }
 
+/* Status */
 .statusOk {
   color: #3aa76d;
 }
@@ -70,4 +75,53 @@
 
 .statusCancelado {
   color: #d93240;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .historicoContainer {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .historicoTable th, 
+  .historicoTable td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .acaoCompra,
+  .acaoVenda {
+    width: 70px;
+    padding: 5px 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .historicoTable {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .historicoTable th, 
+  .historicoTable td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .acaoCompra,
+  .acaoVenda {
+    width: 60px;
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
 }

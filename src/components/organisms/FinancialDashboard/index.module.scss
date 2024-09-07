@@ -1,9 +1,27 @@
 .dashboard {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 1rem 2rem;
-    font-family: 'Montserrat', sans-serif;
-    
-  }
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  font-family: 'Montserrat', sans-serif;
   
+  @media (max-width: 1024px) {
+      flex-wrap: wrap;
+      padding: 1rem;
+      gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 1rem;
+      gap: 1.5rem;
+      align-items: center; /* Centraliza os cards */
+  }
+
+  @media (max-width: 480px) {
+      flex-direction: column;
+      padding: 0.5rem;
+      gap: 1rem;
+      align-items: center; /* Centraliza os cards */
+  }
+}

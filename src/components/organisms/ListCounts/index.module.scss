@@ -1,0 +1,138 @@
+@import "../../../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  font-family: $font-stack;
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 4rem;
+
+      li {
+        font-size: 1.4rem;
+        font-weight: 700;
+        cursor: pointer;
+        color: #828493;
+
+        &.active {
+          color: #f79033;
+        }
+      }
+    }
+  }
+
+  .searchBarContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .ownerSelect {
+      border: none;
+      background-color: #f5f5f5;
+      padding: 0.5rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      outline: none;
+      color: #828493;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .favoriteButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .accountList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 300px; /* Define a altura máxima para o scroll */
+    overflow-y: auto; /* Adiciona a barra de rolagem vertical quando necessário */
+    padding-right: 0.5rem; /* Espaço para a barra de rolagem */
+  }
+
+  .accountCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+    .accountInfo {
+      .accountName {
+        font-weight: 700;
+        color: #000;
+      }
+
+      .accountOwner {
+        color: #828493;
+      }
+    }
+
+    .accountActions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .toggleBalanceButton {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        color: #3853a4;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .favoriteToggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .settingsIcon {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+}

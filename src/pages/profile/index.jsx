@@ -3,6 +3,7 @@ import styles from "./index.module.scss";
 import EditPerfil from "../../components/organisms/EditPerfil";
 import MetodoPagamento from "../../components/organisms/MetodoPagamento";
 import Metamask from "../../components/organisms/Matemask";
+import ListCounts from "../../components/organisms/ListCounts";
 const Profile = () => {
   return (
     <div className={styles.container}>
@@ -12,7 +13,9 @@ const Profile = () => {
       <div className={styles.container_left_up}>
         <EditPerfil />
       </div>
-      <div className={styles.container_left_low}>{/* <EditPerfil /> */}</div>
+      <div className={styles.container_left_low}>
+        <ListCounts />
+      </div>
       <div className={styles.container_right_up}>
         <MetodoPagamento />
       </div>

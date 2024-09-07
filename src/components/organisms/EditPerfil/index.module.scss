@@ -1,0 +1,389 @@
+@import "../../../styles/variables";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  .container_info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    .container_info_photo {
+      position: relative;
+      width: 50%;
+      height: auto;
+      .container_info_photo_profile {
+        width: 75%;
+        height: auto;
+        object-fit: cover;
+        border: 1px $active_orange solid;
+        border-radius: 100%;
+      }
+      .container_info_edit {
+        position: absolute;
+        bottom: 0.1rem;
+        right: 2rem;
+        background: $active_orange;
+        padding: 0.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        .container_info_photo_edit {
+          width: 1.5rem;
+        }
+      }
+    }
+
+    .container_info_content {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      font-family: $font-stack;
+      h2 {
+        width: 100%;
+        align-self: start;
+        font-family: $font-stack;
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+      .container_info_text {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        .container_info_text_div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          .text_black {
+            font-size: 1.1rem;
+            font-weight: 500;
+          }
+          .text_orange {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: $active_orange;
+          }
+          div {
+            display: flex;
+            align-items: center;
+            .moneyButton {
+              background: none;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .container_edit {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: $font-stack;
+    p {
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 0.7rem 4rem;
+    }
+    .container_edit_button {
+      width: 100%;
+      border-style: none;
+      color: $active_orange;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.7rem 1rem;
+      border-radius: 0.6rem;
+      background: rgba(247, 144, 51, 0.15);
+      transition: all 0.3s ease;
+      &:hover {
+        background: $active_orange;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      &:active {
+        background: darken($active_orange, 15%);
+        color: #fff;
+      }
+    }
+  }
+  @media (max-width: 3840px) {
+    .container_info {
+      .container_info_photo {
+        width: 50%;
+        height: auto;
+        .container_info_photo_profile {
+          width: 90%;
+          border-radius: 100%;
+        }
+        .container_info_edit {
+          bottom: 0.1rem;
+          right: 2.6rem;
+          padding: 0.5rem;
+          width: 5rem;
+          height: 5rem;
+          .container_info_photo_edit {
+            width: 3rem;
+          }
+        }
+      }
+
+      .container_info_content {
+        width: 100%;
+        height: 100%;
+        h2 {
+          font-size: 3rem;
+          font-weight: 900;
+        }
+        .container_info_text {
+          height: 100%;
+          width: 100%;
+          gap: 2.5rem;
+          .container_info_text_div {
+            width: 100%;
+            .text_black {
+              font-size: 2.4rem;
+              font-weight: 500;
+            }
+            .text_orange {
+              font-size: 2.4rem;
+              font-weight: 600;
+            }
+            div {
+              gap: 1.5rem;
+              .moneyButton {
+                img {
+                  width: 220%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .container_edit {
+      p {
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 1.2rem 4rem;
+      }
+      .container_edit_button {
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding: 0.7rem 1rem;
+        border-radius: 0.6rem;
+      }
+    }
+  }
+  @media (max-width: 2560px) {
+    .container_info {
+      .container_info_photo {
+        width: 50%;
+        height: auto;
+        .container_info_photo_profile {
+          width: 90%;
+          border-radius: 100%;
+        }
+        .container_info_edit {
+          bottom: 0.1rem;
+          right: 2rem;
+          padding: 0.5rem;
+          width: 3rem;
+          height: 3rem;
+          .container_info_photo_edit {
+            width: 2rem;
+          }
+        }
+      }
+
+      .container_info_content {
+        width: 100%;
+        height: 100%;
+        h2 {
+          font-size: 2rem;
+          font-weight: 900;
+        }
+        .container_info_text {
+          height: 100%;
+          width: 100%;
+          gap: 2.5rem;
+          .container_info_text_div {
+            width: 100%;
+            .text_black {
+              font-size: 1.7rem;
+              font-weight: 500;
+            }
+            .text_orange {
+              font-size: 1.7rem;
+              font-weight: 600;
+            }
+            div {
+              gap: 1.5rem;
+              .moneyButton {
+                img {
+                  width: 190%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .container_edit {
+      p {
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 1.2rem 4rem;
+      }
+      .container_edit_button {
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 0.7rem 1rem;
+        border-radius: 0.6rem;
+      }
+    }
+  }
+  @media (max-width: 1920px) {
+    .container_info {
+      .container_info_photo {
+        width: 50%;
+        height: auto;
+        .container_info_photo_profile {
+          width: 75%;
+          border-radius: 100%;
+        }
+        .container_info_edit {
+          bottom: 0.1rem;
+          right: 2rem;
+          padding: 0.5rem;
+          width: 2.5rem;
+          height: 2.5rem;
+          .container_info_photo_edit {
+            width: 1.5rem;
+          }
+        }
+      }
+
+      .container_info_content {
+        width: 100%;
+        height: 100%;
+        h2 {
+          font-size: 1.5rem;
+          font-weight: 900;
+        }
+        .container_info_text {
+          height: 100%;
+          width: 100%;
+          gap: 1rem;
+          .container_info_text_div {
+            width: 100%;
+            .text_black {
+              font-size: 1.1rem;
+              font-weight: 500;
+            }
+            .text_orange {
+              font-size: 1.1rem;
+              font-weight: 600;
+            }
+            div {
+              gap: 1.5rem;
+              .moneyButton {
+                img {
+                  width: 150%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .container_edit {
+      p {
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 0.5rem 3rem;
+      }
+      .container_edit_button {
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding: 0.7rem 1rem;
+        border-radius: 0.6rem;
+      }
+    }
+  }
+  @media (max-width: 1280px) {
+    .container_info {
+      .container_info_photo {
+        .container_info_edit {
+          position: absolute;
+          right: 2rem;
+          border-radius: 50%;
+          width: 1rem;
+          height: 1rem;
+          .container_info_photo_edit {
+            width: 1rem;
+          }
+        }
+      }
+
+      .container_info_content {
+        h2 {
+          font-size: 1rem;
+          font-weight: 900;
+        }
+        .container_info_text {
+          gap: 1rem;
+          .container_info_text_div {
+            .text_black {
+              font-size: 0.8rem;
+            }
+            .text_orange {
+              font-size: 0.8rem;
+            }
+            div {
+              gap: 1rem;
+              align-items: center;
+              .moneyButton {
+                img {
+                  width: 120%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .container_edit {
+      .container_edit_button {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 0.3rem 0.7rem;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './index.module.scss';
-import arrowUp from '../../../asset/arrowUp.svg';
-import arrowDown from '../../../asset/arrowDown.svg';
+import React from "react";
+import styles from "./index.module.scss";
+import arrowUp from "../../../asset/arrowUp.svg";
+import arrowDown from "../../../asset/arrowDown.svg";
 
 const Historico = () => {
   return (
@@ -19,7 +19,7 @@ const Historico = () => {
           <span className={styles.tipo}>Recebido</span>
         </div>
         <div className={styles.valorContainer}>
-            <img src={arrowUp} className={styles.iconeRecebido} />
+          <img src={arrowUp} className={styles.iconeRecebido} />
           <span className={styles.valorRecebido}>R$559</span>
         </div>
       </div>

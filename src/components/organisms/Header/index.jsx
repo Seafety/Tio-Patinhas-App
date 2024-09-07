@@ -7,7 +7,7 @@ import SearchBar from "../../molecules/SearchBar";
 const Header = () => {
   return (
     <section className={styles.headerContainer}>
-      <SearchBar />
+      <SearchBar placeholder="Busque..." />
       <div className={styles.perfilContent}>
         <Notification />
         <Perfil />

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Line } from "react-chartjs-2";
 import {
@@ -22,6 +23,7 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
 
 const Graph = ({ data, color }) => {
   // Configuração dos dados para o gráfico

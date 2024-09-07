@@ -1,11 +1,12 @@
+
 import React, { useState } from "react";
 import styles from "./index.module.scss";
 import mastercard from "../../../asset/mastercard.svg";
 import visa from "../../../asset/visa.svg";
 
 const SaldoTotal = () => {
-  // Estado contendo os cartões com cores diferentes
   const [cartoes, setCartoes] = useState([
+
     {
       tipo: "Crédito",
       numero: "**** **** **** 2598",
@@ -50,7 +51,6 @@ const SaldoTotal = () => {
         <span className={styles.saldo}>R$106.065,00</span>
         <span className={styles.contas}>Todas Contas</span>
       </div>
-
       <div
         className={styles.cartao}
         style={{ backgroundColor: cartoes[cartaoAtual].cor }}

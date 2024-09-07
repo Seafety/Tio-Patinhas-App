@@ -7,6 +7,7 @@ import cakeIcon from "../../../asset/cakeIcon.svg";
 import tether from "../../../asset/tether.svg";
 import litecoin from "../../../asset/litecoin.svg";
 
+
 const FastBuy = ({ onBuy }) => {
   const [selectedCrypto, setSelectedCrypto] = useState(null);
   const [showCryptoList, setShowCryptoList] = useState(false);
@@ -19,6 +20,7 @@ const FastBuy = ({ onBuy }) => {
     { name: "Ethereum", symbol: "ETH", img: ethIcon },
     { name: "Doge", symbol: "DOGE", img: dogeIcon },
     { name: "Pancake", symbol: "CAKE", img: cakeIcon },
+
   ];
 
   const handleCryptoClick = (crypto) => {
@@ -47,7 +49,6 @@ const FastBuy = ({ onBuy }) => {
   return (
     <div className={styles.compraRapida}>
       <h2 className={styles.title}>Compra Rápida</h2>
-
       <div className={styles.cryptoOptions}>
         {selectedCrypto ? (
           <div className={styles.cryptoSelected}>
@@ -69,6 +70,7 @@ const FastBuy = ({ onBuy }) => {
             <div
               key={crypto.symbol}
               className={styles.cryptoItem}
+
               onClick={() => handleCryptoClick(crypto)}
             >
               <img src={crypto.img} alt={crypto.name} />
@@ -88,7 +90,6 @@ const FastBuy = ({ onBuy }) => {
           onChange={(e) => setAmount(e.target.value)}
         />
       </div>
-
       <button className={styles.buyButton} onClick={handleBuyClick}>
         Comprar Agora
       </button>

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./index.module.scss";
 
+
 const ActivityHistory = ({ transactions }) => {
   return (
     <div className={styles.historicoDeAtividade}>

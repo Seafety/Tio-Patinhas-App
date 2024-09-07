@@ -4,7 +4,6 @@ import styles from "./index.module.scss";
 const HistoricoCompra = ({ historicoTransacoes }) => {
   const formatarMoeda = (valor) => {
     const valorCorrigido = valor * 1000;
-
     return new Intl.NumberFormat("pt-BR", {
       style: "currency",
       currency: "BRL",

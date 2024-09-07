@@ -1,3 +1,4 @@
+
 import React from "react";
 import style from "./index.module.scss";
 import Graph from "../../atoms/Graph";

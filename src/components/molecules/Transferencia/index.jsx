@@ -102,8 +102,6 @@ const Transferencia = ({ onTransferir }) => {
       valorNumerico;
 
     setSaldos(novosSaldos);
-
-    // Sucesso na transferência
     setMensagem(
       `Transferência de ${valorNumerico.toFixed(5)} ${
         moedaSelecionada.symbol

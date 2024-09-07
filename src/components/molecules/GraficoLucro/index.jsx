@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
@@ -10,10 +11,10 @@ const GraficoLucro = () => {
   const [metaAlcancada, setMetaAlcancada] = useState(false);
   const [mensagemMeta, setMensagemMeta] = useState("");
 
+
   useEffect(() => {
     const lucroAleatorio = Math.floor(Math.random() * 50) + 50;
     setPercentualLucro(lucroAleatorio);
-
     const metaLucro = 80;
     if (lucroAleatorio >= metaLucro) {
       setMetaAlcancada(true);

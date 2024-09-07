@@ -60,7 +60,8 @@ const Dashboard = () => {
 
   return (
     <div className={styles.dashboard}>
-      <FinancialDashboard walletTotal={walletTotal} />
+      <div className={styles.financialDashboard}>
+      <FinancialDashboard walletTotal={walletTotal} /></div>
       <div className={styles.container}>
         <CarteiraOverview />
         <MarketStats />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styles from "./index.module.scss";
 
 const CryptoBox = ({ title, children }) => {
@@ -7,9 +7,7 @@ const CryptoBox = ({ title, children }) => {
       <div className={styles.header}>
         <h3>{title}</h3>
       </div>
-      <div className={styles.content}>
-        {children}
-      </div>
+      <div className={styles.content}>{children}</div>
     </div>
   );
 };

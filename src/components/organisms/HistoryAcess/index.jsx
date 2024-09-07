@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
-import Box from "../../templates/BoxSettings/index.jsx"; 
+import Box from "../../templates/BoxSettings/index.jsx";
 
 const HistoryAcess = () => {
   const sessions = [
@@ -25,7 +25,6 @@ const HistoryAcess = () => {
             <div>{session.device}</div>
             <div>{session.location}</div>
             <div>{session.lastAccess}</div>
-            
           </div>
         ))}
       </div>

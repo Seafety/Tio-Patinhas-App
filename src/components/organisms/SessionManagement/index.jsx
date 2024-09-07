@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
-import Box from "../../templates/BoxSettings/index.jsx"; 
+import Box from "../../templates/BoxSettings/index.jsx";
 
 const SessionManagement = () => {
   const sessions = [

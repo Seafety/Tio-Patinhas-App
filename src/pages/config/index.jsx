@@ -8,34 +8,33 @@ import PrivacySettings from "../../components/organisms/PrivacySettings";
 import HistoryAcess from "../../components/organisms/HistoryAcess";
 import ThemeSelection from "../../components/organisms/Theme";
 
-
 const Config = () => {
-  const [activeSection, setActiveSection] = useState('account');
+  const [activeSection, setActiveSection] = useState("account");
 
   const renderSection = () => {
     switch (activeSection) {
-      case 'account':
+      case "account":
         return (
           <>
             <AccountSection />
             <NotificationSettings />
           </>
         );
-      case 'security':
+      case "security":
         return (
           <>
             <TwoFactorAuth />
             <SessionManagement />
-            <HistoryAcess/>
+            <HistoryAcess />
             <PrivacySettings />
           </>
         );
-      case 'theme':
+      case "theme":
         return (
           <>
-        <ThemeSelection/>
-        </>
-      );
+            <ThemeSelection />
+          </>
+        );
       default:
         return null;
     }
@@ -44,28 +43,32 @@ const Config = () => {
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
-        <button 
-          className={`${styles.navButton} ${activeSection === 'account' ? styles.active : ''}`}
-          onClick={() => setActiveSection('account')}
+        <button
+          className={`${styles.navButton} ${
+            activeSection === "account" ? styles.active : ""
+          }`}
+          onClick={() => setActiveSection("account")}
         >
           Conta
         </button>
-        <button 
-          className={`${styles.navButton} ${activeSection === 'security' ? styles.active : ''}`}
-          onClick={() => setActiveSection('security')}
+        <button
+          className={`${styles.navButton} ${
+            activeSection === "security" ? styles.active : ""
+          }`}
+          onClick={() => setActiveSection("security")}
         >
           Segurança
         </button>
-        <button 
-          className={`${styles.navButton} ${activeSection === 'theme' ? styles.active : ''}`}
-          onClick={() => setActiveSection('theme')}
+        <button
+          className={`${styles.navButton} ${
+            activeSection === "theme" ? styles.active : ""
+          }`}
+          onClick={() => setActiveSection("theme")}
         >
           Tema
         </button>
       </div>
-      <div className={styles.content}>
-        {renderSection()}
-      </div>
+      <div className={styles.content}>{renderSection()}</div>
     </div>
   );
 };

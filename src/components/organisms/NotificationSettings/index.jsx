@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./index.module.scss";
-import Box from "../../templates/BoxSettings/index.jsx"; 
+import Box from "../../templates/BoxSettings/index.jsx";
 import ToggleSwitch from "../../atoms/ToggleSwitch/index.jsx";
 
 const NotificationSettings = () => {
@@ -28,7 +28,7 @@ const NotificationSettings = () => {
         {notifications.map((notification, index) => (
           <div key={index} className={styles.notificationItem}>
             <span>{notification}</span>
-          
+
             <ToggleSwitch
               checked={checkedState[index]}
               onToggle={() => toggleCheckbox(index)}

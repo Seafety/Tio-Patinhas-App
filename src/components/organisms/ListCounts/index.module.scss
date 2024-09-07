@@ -7,6 +7,8 @@
   padding: 1.5rem;
   background-color: #fff;
   font-family: $font-stack;
+  box-sizing: border-box;
+
   .nav {
     display: flex;
     justify-content: space-around;
@@ -55,25 +57,34 @@
       align-items: center;
       justify-content: center;
       background-color: #f5f5f5;
+      border-style: none;
       border-radius: 10px;
-      width: 40px;
-      height: 40px;
+      width: auto;
+      height: auto;
+      padding: 0.5rem;
       cursor: pointer;
-
       img {
-        width: 24px;
-        height: 24px;
+        width: 1.5rem;
+        height: 1.5rem;
       }
     }
   }
 
   .accountList {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-height: 300px; /* Define a altura máxima para o scroll */
-    overflow-y: auto; /* Adiciona a barra de rolagem vertical quando necessário */
-    padding-right: 0.5rem; /* Espaço para a barra de rolagem */
+    max-height: 19rem;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #f79033;
+      border-radius: 10px;
+    }
   }
 
   .accountCard {
@@ -81,17 +92,22 @@
     justify-content: space-between;
     align-items: center;
     background-color: #f5f5f5;
-    border-radius: 10px;
+    border-radius: 1rem;
     padding: 1rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 
     .accountInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
       .accountName {
+        font-size: 1.1rem;
         font-weight: 700;
         color: #000;
       }
 
       .accountOwner {
+        font-size: 0.8rem;
         color: #828493;
       }
     }
@@ -108,6 +124,7 @@
         background: none;
         border: none;
         cursor: pointer;
+        font-size: 1.1rem;
         font-weight: 700;
         color: #3853a4;
 

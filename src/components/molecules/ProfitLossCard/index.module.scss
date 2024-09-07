@@ -1,0 +1,59 @@
+.card {
+    background-color: #F79033; 
+    border-radius: 10px; 
+    padding: 20px;
+    width: 20%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif !important;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .value {
+    font-size: 32px;
+    font-weight: medium;
+  }
+  
+  .icon {
+    width: 1.7rem;
+    cursor: pointer; // Adicionado para indicar que é clicável
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .section {
+    text-align: center;
+  }
+  
+  .label {
+    font-size: 14px;
+    display: block;
+  }
+  
+  .profit {
+    color: #42FF55;
+    font-weight: 600; 
+  }
+  
+  .loss {
+    color: #EC2A00; 
+    font-weight: 600; 
+  }
+  
+  .neutral {
+    color: #FFCFA1;
+    font-weight: 600; 
+  }
+  

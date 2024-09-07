@@ -1,5 +1,6 @@
-import React from 'react';
-import styles from './index.module.scss';
+import React from "react";
+import styles from "./index.module.scss";
+
 
 const ActivityHistory = ({ transactions }) => {
   return (
@@ -19,15 +20,23 @@ const ActivityHistory = ({ transactions }) => {
           {transactions.map((transaction) => (
             <tr key={transaction.id}>
               <td className={styles.transaction}>
-                <img src={transaction.crypto.img} alt={transaction.crypto.name} />
+                <img
+                  src={transaction.crypto.img}
+                  alt={transaction.crypto.name}
+                />
                 {transaction.crypto.symbol} {transaction.crypto.name}
               </td>
               <td>{transaction.action}</td>
-              <td className={transaction.action === 'Compra' ? styles.red : styles.green}>
-                {transaction.action === 'Compra' ? '-' : '+'}{transaction.amount.toFixed(2)}
+              <td
+                className={
+                  transaction.action === "Compra" ? styles.red : styles.green
+                }
+              >
+                {transaction.action === "Compra" ? "-" : "+"}
+                {transaction.amount.toFixed(2)}
               </td>
               <td>{transaction.status}</td>
-              <td style={{color:'gray'}}>{transaction.date}</td>
+              <td style={{ color: "gray" }}>{transaction.date}</td>
             </tr>
           ))}
         </tbody>

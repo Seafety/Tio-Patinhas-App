@@ -1,9 +1,9 @@
-import React from 'react';
-import styles from './index.module.scss';
-import btcIcon from '../../../asset/btcIcon.svg';
-import ethIcon from '../../../asset/ethIcon.svg';
-import cakeIcon from '../../../asset/cakeIcon.svg';
-import dogeIcon from '../../../asset/dogeIcon.svg';
+import React from "react";
+import styles from "./index.module.scss";
+import btcIcon from "../../../asset/btcIcon.svg";
+import ethIcon from "../../../asset/ethIcon.svg";
+import cakeIcon from "../../../asset/cakeIcon.svg";
+import dogeIcon from "../../../asset/dogeIcon.svg";
 
 const Wallet = () => {
   return (
@@ -12,7 +12,9 @@ const Wallet = () => {
       <ul className={styles.walletList}>
         <li className={styles.walletItem}>
           <div className={styles.coinInfo}>
-            <span className={styles.coinIcon}><img src={btcIcon}></img></span>
+            <span className={styles.coinIcon}>
+              <img src={btcIcon}></img>
+            </span>
             <span className={styles.coinName}>Bitcoin</span>
           </div>
           <div className={styles.coinBalance}>0,16 BTC</div>
@@ -20,7 +22,9 @@ const Wallet = () => {
         </li>
         <li className={styles.walletItem}>
           <div className={styles.coinInfo}>
-            <span className={styles.coinIcon}><img src={ethIcon}></img></span> 
+            <span className={styles.coinIcon}>
+              <img src={ethIcon}></img>
+            </span>
             <span className={styles.coinName}>Ethereum</span>
           </div>
           <div className={styles.coinBalance}>2 ETH</div>
@@ -28,7 +32,9 @@ const Wallet = () => {
         </li>
         <li className={styles.walletItem}>
           <div className={styles.coinInfo}>
-            <span className={styles.coinIcon}><img src={cakeIcon}></img></span>
+            <span className={styles.coinIcon}>
+              <img src={cakeIcon}></img>
+            </span>
             <span className={styles.coinName}>Pancake</span>
           </div>
           <div className={styles.coinBalance}>1250 CAKE</div>
@@ -36,7 +42,9 @@ const Wallet = () => {
         </li>
         <li className={styles.walletItem}>
           <div className={styles.coinInfo}>
-            <span className={styles.coinIcon}><img src={dogeIcon}></img></span> 
+            <span className={styles.coinIcon}>
+              <img src={dogeIcon}></img>
+            </span>
             <span className={styles.coinName}>Doge</span>
           </div>
           <div className={styles.coinBalance}>841 DOGE</div>

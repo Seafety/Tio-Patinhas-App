@@ -1,0 +1,32 @@
+.twoFactorAuth {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle {
+  font-size: 32px;
+  color: #ccc; /* Cor inicial do switch */
+  transition: color 0.3s;
+}
+
+.checked {
+  color: #ffaa00; /* Cor laranja quando ativado */
+}
+
+.backupButton {
+  padding: 8px 16px;
+  background-color: #ffaa00;
+  width: 15rem;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}

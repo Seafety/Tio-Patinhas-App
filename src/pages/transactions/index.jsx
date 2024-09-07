@@ -11,12 +11,42 @@ import GraficoLucro from "../../components/molecules/GraficoLucro";
 
 const Transactions = () => {
   const [historicoTransacoes, setHistoricoTransacoes] = useState([
-    { id: 1, name: "Bitcoin", symbol: "BTC", quantidade: 0.002, preco: 120000, acao: "COMPRA", status: "Pendente" },
-    { id: 2, name: "Ethereum", symbol: "ETH", quantidade: 0.5, preco: 8500, acao: "VENDA", status: "OK" },
-    { id: 3, name: "Ripple", symbol: "XRP", quantidade: 200, preco: 3.5, acao: "COMPRA", status: "Cancelado" },
+    {
+      id: 1,
+      name: "Bitcoin",
+      symbol: "BTC",
+      quantidade: 0.002,
+      preco: 120000,
+      acao: "COMPRA",
+      status: "Pendente",
+    },
+    {
+      id: 2,
+      name: "Ethereum",
+      symbol: "ETH",
+      quantidade: 0.5,
+      preco: 8500,
+      acao: "VENDA",
+      status: "OK",
+    },
+    {
+      id: 3,
+      name: "Ripple",
+      symbol: "XRP",
+      quantidade: 200,
+      preco: 3.5,
+      acao: "COMPRA",
+      status: "Cancelado",
+    },
   ]);
 
-  const adicionarTransacao = (moeda, quantidade, preco, acao, status = 'OK') => {
+  const adicionarTransacao = (
+    moeda,
+    quantidade,
+    preco,
+    acao,
+    status = "OK"
+  ) => {
     const novaTransacao = {
       id: historicoTransacoes.length + 1,
       name: moeda.name,
@@ -24,23 +54,29 @@ const Transactions = () => {
       quantidade,
       preco,
       acao,
-      status
+      status,
     };
     setHistoricoTransacoes([novaTransacao, ...historicoTransacoes]);
   };
 
   const handleComprar = (moeda, quantidade, preco) => {
-    adicionarTransacao(moeda, quantidade, preco, 'COMPRA');
+    adicionarTransacao(moeda, quantidade, preco, "COMPRA");
     alert("Comprar ação executada!");
   };
 
   const handleVender = (moeda, quantidade, preco) => {
-    adicionarTransacao(moeda, quantidade, preco, 'VENDA');
+    adicionarTransacao(moeda, quantidade, preco, "VENDA");
     alert("Vender ação executada!");
   };
 
   const handleTransferir = (moeda, quantidade, empresa, conta) => {
-    adicionarTransacao(moeda, quantidade, moeda.preco, 'TRANSFERENCIA', `Transferido para ${conta}`);
+    adicionarTransacao(
+      moeda,
+      quantidade,
+      moeda.preco,
+      "TRANSFERENCIA",
+      `Transferido para ${conta}`
+    );
     alert("Transferência realizada!");
   };
 
@@ -56,16 +92,20 @@ const Transactions = () => {
           tipo="Comprar"
           qtd={1}
           preco={3252.27}
-          onAction={(moeda, quantidade, preco) => handleComprar(moeda, quantidade, preco)}
+          onAction={(moeda, quantidade, preco) =>
+            handleComprar(moeda, quantidade, preco)
+          }
         />
         <MoedaForm
           tipo="Vender"
           qtd={0.00007}
-          preco={1500.00}
-          onAction={(moeda, quantidade, preco) => handleVender(moeda, quantidade, preco)}
+          preco={1500.0}
+          onAction={(moeda, quantidade, preco) =>
+            handleVender(moeda, quantidade, preco)
+          }
         />
         <Transferencia
-          moeda={{ name: 'CAKE', symbol: 'CAKE', preco: 520 }}
+          moeda={{ name: "CAKE", symbol: "CAKE", preco: 520 }}
           empresa="PatinhasBusiness"
           conta="Tio Patinhas"
           onTransferir={handleTransferir}
@@ -74,14 +114,28 @@ const Transactions = () => {
       <div className={styles.historico}>
         <HistoricoCompra historicoTransacoes={historicoTransacoes} />
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'stretch', marginBottom: '30px' }}>
-      <div style={{ width: '62%' }}>
-        <GraficoSemanal />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          alignItems: "stretch",
+          marginBottom: "30px",
+        }}
+      >
+        <div style={{ width: "62%" }}>
+          <GraficoSemanal />
+        </div>
+        <div
+          style={{
+            width: "30%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <GraficoLucro />
+        </div>
       </div>
-      <div style={{ width: '30%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <GraficoLucro />
-      </div>
-    </div>
     </div>
   );
 };

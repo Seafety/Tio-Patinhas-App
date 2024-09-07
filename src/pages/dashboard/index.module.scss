@@ -15,6 +15,7 @@
   align-items: flex-start;
   align-items: stretch;
   max-height: 95%;
+
 }
 
 .container2 {
@@ -40,7 +41,6 @@
   }
 }
 
-/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -58,13 +58,11 @@
     margin-top: 10px;
   }
 
-  /* Ajustes específicos para elementos do Dashboard */
   .wallet, .marketStats, .carteiraOverview {
     width: 100%;
   }
 }
 
-/* Responsividade para telas pequenas (smartphones pequenos) */
 @media (max-width: 480px) {
   .container {
     padding: 0rem;

@@ -10,12 +10,13 @@
   width: 50%;
   overflow-y: scroll;
   max-height: 227px;
-  &:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
 }
 
-.title{
+.historicoDeAtividade:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -53,4 +54,47 @@
 
 .red {
   color: #dc3545;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+  .historicoDeAtividade {
+    width: 100%;
+    padding: 15px;
+    max-height: 200px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .table th, .table td {
+    padding: 8px;
+  }
+
+  .transaction img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media screen and (max-width: 480px) {
+  .historicoDeAtividade {
+    padding: 10px;
+    max-height: 180px;
+  }
+
+  .title {
+    font-size: 0.9rem;
+  }
+
+  .table th, .table td {
+    padding: 6px;
+  }
+
+  .transaction img {
+    width: 16px;
+    height: 16px;
+  }
 }

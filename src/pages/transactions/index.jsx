@@ -74,14 +74,32 @@ const Transactions = () => {
       <div className={styles.historico}>
         <HistoricoCompra historicoTransacoes={historicoTransacoes} />
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'stretch', marginBottom: '30px' }}>
-      <div style={{ width: '62%' }}>
-        <GraficoSemanal />
+            <div style={{
+        display: 'flex',
+        justifyContent: 'space-around',
+        alignItems: 'stretch',
+        marginBottom: '30px',
+        flexWrap: 'wrap'
+      }}>
+        <div style={{
+          width: '100%',
+          maxWidth: '62%',
+          marginBottom: '20px', 
+        }} className="grafico">
+          <GraficoSemanal />
+        </div>
+        
+        <div style={{
+          width: '100%',
+          maxWidth: '30%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginBottom: '20px', 
+        }} className="grafico">
+          <GraficoLucro />
+        </div>
       </div>
-      <div style={{ width: '30%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <GraficoLucro />
-      </div>
-    </div>
     </div>
   );
 };

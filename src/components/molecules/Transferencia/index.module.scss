@@ -42,8 +42,8 @@
       width: 100%;
       padding: 10px;
       font-size: 16px;
-      border:none;
-      border-radius: 10px;  
+      border: none;
+      border-radius: 10px;
       background-color: #F8F8F8;
       text-align: end;
       height: 55px;
@@ -95,7 +95,7 @@
     }
   }
 
-  .erro{
+  .erro {
     color: #ff0000;
     font-weight: bold;
     margin-top: 5px;
@@ -103,12 +103,76 @@
     align-items: center;
     text-align: center;
   }
-  .sucesso{
+
+  .sucesso {
     color: #33df5b;
     font-weight: bold;
     margin-top: 5px;
     display: flex;
     align-items: center;
     text-align: center;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .transferenciaForm {
+    padding: 15px;
+  }
+
+  .header {
+    font-size: 18px;
+  }
+
+  .inputGroup {
+    label {
+      font-size: 0.9rem;
+      height: 45px;
+      width: 25%;
+    }
+
+    select, input {
+      font-size: 14px;
+      height: 45px;
+    }
+  }
+
+  .transferirButton {
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .transferenciaForm {
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .inputGroup {
+    label {
+      font-size: 0.8rem;
+      height: 40px;
+      width: 30%;
+    }
+
+    select, input {
+      font-size: 12px;
+      height: 40px;
+    }
+
+    .moedaSelect select,
+    .moedaSelect input {
+      font-size: 12px;
+    }
+  }
+
+  .transferirButton {
+    height: 45px;
+    font-size: 14px;
   }
 }

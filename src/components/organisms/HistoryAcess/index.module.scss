@@ -1,0 +1,24 @@
+.sessionList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .subTitle {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .sessionItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .sessionItem div{
+    flex: 1;
+    text-align: left;
+  }

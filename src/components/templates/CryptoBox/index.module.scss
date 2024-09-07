@@ -1,0 +1,35 @@
+.cryptoBox {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h3 {
+    font-size: 1.1em;
+    color: #ff7f00;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .header .moreButton {
+    background: none;
+    border: none;
+    color: #ff7f00;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+  .content {
+    margin-top: 10px;
+  }
+  

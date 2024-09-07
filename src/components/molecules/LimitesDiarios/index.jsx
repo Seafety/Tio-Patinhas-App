@@ -1,29 +1,32 @@
-import React, { useState } from 'react';
-import { Doughnut } from 'react-chartjs-2';
-import { Chart, ArcElement, Tooltip, Legend } from 'chart.js';
-import styles from './index.module.scss';
-import Award from '../../../asset/award.svg';
-import goal from '../../../asset/goal.svg';
+import React, { useState } from "react";
+import { Doughnut } from "react-chartjs-2";
+import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
+import styles from "./index.module.scss";
+import Award from "../../../asset/Award.svg";
+import goal from "../../../asset/goal.svg";
 
 Chart.register(ArcElement, Tooltip, Legend);
 
 const LimitesDiarios = () => {
-  const [limite, setLimite] = useState(28000); 
-  const [isEditing, setIsEditing] = useState(false); 
+  const [limite, setLimite] = useState(28000);
+  const [isEditing, setIsEditing] = useState(false);
 
-  const currentMonthYear = new Date().toLocaleString('pt-BR', { month: 'short', year: 'numeric' });
+  const currentMonthYear = new Date().toLocaleString("pt-BR", {
+    month: "short",
+    year: "numeric",
+  });
 
   const formatCurrency = (value) => {
-    return new Intl.NumberFormat('pt-BR', {
-      style: 'currency',
-      currency: 'BRL',
+    return new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
       minimumFractionDigits: 2,
     }).format(value);
   };
 
   const handleLimiteChange = (e) => {
-    const onlyNumbers = e.target.value.replace(/[^\d]/g, ''); 
-    setLimite(Number(onlyNumbers)); 
+    const onlyNumbers = e.target.value.replace(/[^\d]/g, "");
+    setLimite(Number(onlyNumbers));
   };
 
   const toggleEdit = () => {
@@ -31,15 +34,15 @@ const LimitesDiarios = () => {
   };
 
   const data = {
-    labels: ['Alcançado', 'Restante'],
+    labels: ["Alcançado", "Restante"],
     datasets: [
       {
-        data: [12, 8], 
-        backgroundColor: ['#FF9900', '#EAEAEA'],
+        data: [12, 8],
+        backgroundColor: ["#FF9900", "#EAEAEA"],
         borderWidth: 0,
         circumference: 180,
         rotation: 270,
-        cutout: '90%', 
+        cutout: "90%",
       },
     ],
   };
@@ -60,7 +63,7 @@ const LimitesDiarios = () => {
         {isEditing ? (
           <input
             type="text"
-            value={limite.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')} 
+            value={limite.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
             onChange={handleLimiteChange}
             className={styles.limiteInput}
           />
@@ -78,12 +81,20 @@ const LimitesDiarios = () => {
       <div className={styles.chartMeta}>
         <div className={styles.metaInfo}>
           <div className={styles.metaText}>
-            <span className={styles.valorMeta}><img src={Award} alt="Award" /> Lucro Máximo Diário</span>
-            <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>R$12.500,00</span>
+            <span className={styles.valorMeta}>
+              <img src={Award} alt="Award" /> Lucro Máximo Diário
+            </span>
+            <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
+              R$12.500,00
+            </span>
           </div>
           <div className={styles.metaText}>
-            <span className={styles.valorMeta}><img src={goal} alt="Goal" /> Meta de Lucro</span>
-            <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>R$9.000,00</span>
+            <span className={styles.valorMeta}>
+              <img src={goal} alt="Goal" /> Meta de Lucro
+            </span>
+            <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
+              R$9.000,00
+            </span>
           </div>
         </div>
         <div className={styles.gaugeChart}>

@@ -1,10 +1,27 @@
-import React from 'react';
-import { Line } from 'react-chartjs-2';
-import { Chart as ChartJS, LineElement, PointElement, LinearScale, Title, CategoryScale, Tooltip, Legend } from 'chart.js';
-import style from './index.module.scss';
+import React from "react";
+import { Line } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  LineElement,
+  PointElement,
+  LinearScale,
+  Title,
+  CategoryScale,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import style from "./index.module.scss";
 
 // Register the necessary chart components
-ChartJS.register(LineElement, PointElement, LinearScale, Title, CategoryScale, Tooltip, Legend);
+ChartJS.register(
+  LineElement,
+  PointElement,
+  LinearScale,
+  Title,
+  CategoryScale,
+  Tooltip,
+  Legend
+);
 
 const Graph = ({ data, color }) => {
   // Configuração dos dados para o gráfico
@@ -12,7 +29,7 @@ const Graph = ({ data, color }) => {
     labels: data.map((_, index) => index + 1),
     datasets: [
       {
-        label: 'Performance',
+        label: "Performance",
         data: data,
         fill: false,
         borderColor: color,

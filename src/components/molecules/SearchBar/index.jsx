@@ -8,9 +8,9 @@ const SearchBar = ({ placeholder, value, onChange }) => {
     <div className={styles.searchBar}>
       <input
         type="text"
-        placeholder={placeholder} // Usando o placeholder dinâmico
-        value={value} // Ligando o valor ao estado recebido
-        onChange={onChange} // Atualizando o valor conforme o usuário digita
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
         className={styles.input}
       />
       <img src={SearchIcon} alt="search icon" className={styles.icon} />

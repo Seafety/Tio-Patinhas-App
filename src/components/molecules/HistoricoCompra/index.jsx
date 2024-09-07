@@ -4,19 +4,19 @@ import styles from "./index.module.scss";
 const HistoricoCompra = ({ historicoTransacoes }) => {
   const formatarMoeda = (valor) => {
     const valorCorrigido = valor * 1000;
-    
-    return new Intl.NumberFormat('pt-BR', { 
-      style: 'currency', 
-      currency: 'BRL', 
-      minimumFractionDigits: 2, 
-      maximumFractionDigits: 2 
+
+    return new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
     }).format(valorCorrigido);
   };
 
-  const formatarQuantidade = (quantidade) => 
-    quantidade.toLocaleString('pt-BR', { 
-      minimumFractionDigits: 3, 
-      maximumFractionDigits: 3 
+  const formatarQuantidade = (quantidade) =>
+    quantidade.toLocaleString("pt-BR", {
+      minimumFractionDigits: 3,
+      maximumFractionDigits: 3,
     });
 
   return (
@@ -35,22 +35,37 @@ const HistoricoCompra = ({ historicoTransacoes }) => {
         <tbody>
           {historicoTransacoes.map((transacao) => (
             <tr key={transacao.id}>
-              <td>{transacao.name} <span style={{color: '#9A9A9A', marginLeft:'5px'}}>{transacao.symbol}</span></td>
-              <td>{formatarQuantidade(transacao.quantidade)}</td>
-              <td style={{fontWeight:'bold'}}>{formatarMoeda(transacao.preco)}</td>
               <td>
-                <span className={
-                  transacao.acao === 'COMPRA' ? styles.acaoCompra : styles.acaoVenda
-                }>
+                {transacao.name}{" "}
+                <span style={{ color: "#9A9A9A", marginLeft: "5px" }}>
+                  {transacao.symbol}
+                </span>
+              </td>
+              <td>{formatarQuantidade(transacao.quantidade)}</td>
+              <td style={{ fontWeight: "bold" }}>
+                {formatarMoeda(transacao.preco)}
+              </td>
+              <td>
+                <span
+                  className={
+                    transacao.acao === "COMPRA"
+                      ? styles.acaoCompra
+                      : styles.acaoVenda
+                  }
+                >
                   {transacao.acao}
                 </span>
               </td>
               <td>
-                <span className={
-                  transacao.status === 'OK' ? styles.statusOk 
-                  : transacao.status === 'Pendente' ? styles.statusPendente 
-                  : styles.statusCancelado
-                }>
+                <span
+                  className={
+                    transacao.status === "OK"
+                      ? styles.statusOk
+                      : transacao.status === "Pendente"
+                      ? styles.statusPendente
+                      : styles.statusCancelado
+                  }
+                >
                   {transacao.status}
                 </span>
               </td>

@@ -54,7 +54,6 @@ const Dashboard = () => {
 
     setTransactions([newTransaction, ...transactions]);
     setWalletTotal((prevTotal) => prevTotal - parsedAmount);
-
     window.alert("Compra realizada com sucesso!");
   };
 

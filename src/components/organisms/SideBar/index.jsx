@@ -34,11 +34,12 @@ const SideBar = () => {
   return (
     <div className={styles.sidebar}>
       <div className={styles.logo}>
+       <Link to="/">
         <img
           src={DuckMarket}
           alt="DuckMarket Logo"
           className={styles.logoImage}
-        />
+        /></Link>
       </div>
       <nav>
         <ul className={styles.navList}>

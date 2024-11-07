@@ -1,71 +1,52 @@
 .cryptoSections {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   
-  .cryptoBoxContent {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .cryptoBoxContent div{
-        flex: 1;
-        text-align: left;
-
+  max-width: 100%;
 }
-    .coinItem {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
-    gap: 1rem;
-    height: 2rem;
-    
-   
-  }
-  .coinName,
-.coinSymbol,
+
+.cryptoBoxContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coinItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+}
+
+.coinIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.coinName {
+  
+  font-family: 'Lato', sans-serif;
+  width: 5rem;
+}
+
+.coinSymbol {
+  color: #777;
+}
+
 .coinPrice,
 .coinChange {
-  text-align: left; 
+  font-weight: bold;
+  font-size: 0.9em;
 }
-  .coinItem:last-child {
-    border-bottom: none;
-  }
-  .coinIcon {
-    width: 30px;
-    height: 30px;
-    
-  }
-  .coinName {
-    font-weight: bold;
-    width:  5rem;
-  }
-  
-  .coinSymbol {
-    color: #777;
-  }
-  
-  .coinPrice {
-    font-weight: bold;
-  }
-  
-  .coinChange {
-    font-size: 0.9em;
-  }
-  
-  .positive {
-    color: #4caf50;
-    font-weight: bold;
-  }
-  
-  .negative {
-    color: #f44336;
-    font-weight: bold;
 
-  }
-  
+.positive {
+  color: #4caf50;
+}
+
+.negative {
+  color: #f44336;
+}

@@ -1,6 +1,33 @@
-.container{
+.container {
     display: flex;
-    padding: 2rem;
+    gap: 20px;
+    padding: 0rem 2rem;
     flex-direction: column;
-    font-family: ‘Lato’, sans-serif !important;
-}
+    font-family: 'Lato', sans-serif;
+    max-height: 91.5vh;
+    overflow-y: auto;
+  }
+  
+  /* Responsividade para tablets */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0rem 1rem;
+      gap: 15px;
+    }
+  }
+  
+  /* Responsividade para mobile */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0rem 0.5rem;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 0rem;
+      gap: 8px;
+    }
+  }
+  
